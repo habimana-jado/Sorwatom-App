@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <title>Order</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- favicon
+                    ============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="./../img/favicon.ico"/>
+        <!-- Google Fonts
+                    ============================================ -->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet"/>
+        <!-- Bootstrap CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/bootstrap.min.css"/>
+        <!-- Bootstrap CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/font-awesome.min.css"/>
+        <!-- owl.carousel CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/owl.carousel.css"/>
+        <link rel="stylesheet" href="./../css/owl.theme.css"/>
+        <link rel="stylesheet" href="./../css/owl.transitions.css"/>
+        <!-- animate CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/animate.css"/>
+        <!-- normalize CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/normalize.css"/>
+        <!-- meanmenu icon CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/meanmenu.min.css"/>
+        <!-- main CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/main.css"/>
+        <!-- morrisjs CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/morrisjs/morris.css"/>
+        <!-- mCustomScrollbar CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/scrollbar/jquery.mCustomScrollbar.min.css"/>
+        <!-- metisMenu CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/metisMenu/metisMenu.min.css"/>
+        <link rel="stylesheet" href="./../css/metisMenu/metisMenu-vertical.css"/>
+        <!-- calendar CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/calendar/fullcalendar.min.css"/>
+        <link rel="stylesheet" href="./../css/calendar/fullcalendar.print.min.css"/>
+        <!-- modals CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/modals.css"/>
+        <!-- forms CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/form/all-type-forms.css"/>
+        <!-- style CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../style.css"/>
+        <!-- responsive CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="./../css/responsive.css"/>
+        <!-- modernizr JS
+                    ============================================ -->
+        <script src="./../js/vendor/modernizr-2.8.3.min.js"></script>
+    </h:head>
+    <h:body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+        <!-- Start Welcome area -->
+        <div class="row">
+            
+            <div class="header-advance-area">
+                <div class="header-top-area">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-top-wraper">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                            <div class="menu-switcher-pro">
+                                                <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                                    <i class="fa fa-bars"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                            <div class="header-top-menu tabl-d-n">
+                                                <ul class="nav navbar-nav mai-top-nav">
+                                                    <li class="nav-item"><a href="./../../index.xhtml" class="nav-link">Home</a>
+                                                    </li>
+                                                    <li class="nav-item"><a href="orders.xhtml" class="nav-link">Orders</a>
+                                                    </li>
+                                                    <li class="nav-item"><a href="pendingorder.xhtml" class="nav-link">Pending Orders</a>
+                                                    </li>
+                                                    <li class="nav-item"><a href="own.xhtml" class="nav-link">My Own</a>
+                                                    </li>
+                                                    <li class="nav-item"><a href="./../index.xhtml" class="nav-link">Logout</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu start -->
+                <div class="mobile-menu-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="mobile-menu">
+                                    <nav id="dropdown">
+                                        <ul class="mobile-menu-nav">
+                                            <li><a data-toggle="collapse" data-target="#Charts" href="#">Home <span class="admin-project-icon adminpro-icon adminpro-down-arrow"></span></a>
+                                                <ul class="collapse dropdown-header-top">
+                                                    <li><a href="./../../index.xhtml" >Home</a>
+                                                    </li>
+                                                    <li><a href="orders.xhtml">Orders</a>
+                                                    </li>
+                                                    <li><a href="pendingorder.xhtml">Pending Orders</a>
+                                                    </li>
+                                                    <li><a href="own.xhtml">My Own</a>
+                                                    </li>
+                                                    <li><a href="./../index.xhtml">Logout</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu end -->
+                <div class="breadcome-area">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="breadcome-list single-page-breadcome">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <ul class="breadcome-menu">
+                                                <li><a href="#">Home</a> <span class="bread-slash">/</span>
+                                                </li>
+                                                <li><span class="bread-blod">Data Table</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Static Table Start -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="sparkline12-list">
+                        <div class="sparkline12-hd">
+                            <div class="main-sparkline12-hd">
+                                <h1>List Orders</h1>
+                            </div>
+                        </div>
+                        <div class="sparkline12-graph">
+                            <div class="basic-login-form-ad">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <h:form>
+                                            <table class="table table-striped table-hover">
+                                                <thead class="bg-light">
+                                                    <tr class="border-0">
+                                                        <th class="border-0">#</th>
+                                                        <th class="border-0">Product Name</th>
+                                                        <th class="border-0">Unit Price</th>
+                                                        <th class="border-0">Quantity</th>
+                                                        <th class="border-0">Status</th>
+                                                        <th class="border-0">Date</th>
+                                                        <th class="border-0">Customer Name</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <c:forEach items="#{deliveryModel.deliverys}" var="elements" varStatus="status">
+                                                        <tr>
+                                                            <td>${status.index+1}</td>
+                                                            <td>
+                                                                #{elements.item}
+                                                            </td>
+                                                            <td>
+                                                                <h:outputText value="#{elements.item.unitPrice * elements.quantity}">
+                                                                    <f:convertNumber pattern="###,###,###"/>
+                                                                </h:outputText>
+                                                            </td>
+                                                            <td>#{elements.quantity}</td>
+                                                            <td>#{elements.status}</td>
+                                                            <td>#{elements.dueDate}</td>
+                                                            
+                                                            <td>#{elements.customer.names}</td>
+                                                        </tr>
+                                                    </c:forEach>
+                                                </tbody>
+                                            </table>
+                                        </h:form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Static Table End -->
+            <div class="footer-copyright-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-copy-right">
+                                <p>Copyright © 2019 by RWIBUTSO Frank.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery
+                    ============================================ -->
+        <script src="./../js/vendor/jquery-1.11.3.min.js"></script>
+        <!-- bootstrap JS
+                    ============================================ -->
+        <script src="./../js/bootstrap.min.js"></script>
+        <!-- wow JS
+                    ============================================ -->
+        <script src="./../js/wow.min.js"></script>
+        <!-- price-slider JS
+                    ============================================ -->
+        <script src="./../js/jquery-price-slider.js"></script>
+        <!-- meanmenu JS
+                    ============================================ -->
+        <script src="./../js/jquery.meanmenu.js"></script>
+        <!-- owl.carousel JS
+                    ============================================ -->
+        <script src="./../js/owl.carousel.min.js"></script>
+        <!-- sticky JS
+                    ============================================ -->
+        <script src="./../js/jquery.sticky.js"></script>
+        <!-- scrollUp JS
+                    ============================================ -->
+        <script src="./../js/jquery.scrollUp.min.js"></script>
+        <!-- mCustomScrollbar JS
+                    ============================================ -->
+        <script src="./../js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="./../js/scrollbar/mCustomScrollbar-active.js"></script>
+        <!-- metisMenu JS
+                    ============================================ -->
+        <script src="./../js/metisMenu/metisMenu.min.js"></script>
+        <script src="./../js/metisMenu/metisMenu-active.js"></script>
+        <!-- data table JS
+                    ============================================ -->
+        <script src="./../js/data-table/bootstrap-table.js"></script>
+        <script src="./../js/data-table/tableExport.js"></script>
+        <script src="./../js/data-table/data-table-active.js"></script>
+        <script src="./../js/data-table/bootstrap-table-editable.js"></script>
+        <script src="./../js/data-table/bootstrap-editable.js"></script>
+        <script src="./../js/data-table/bootstrap-table-resizable.js"></script>
+        <script src="./../js/data-table/colResizable-1.5.source.js"></script>
+        <script src="./../js/data-table/bootstrap-table-export.js"></script>
+        <!--  editable JS
+                    ============================================ -->
+        <script src="./../js/editable/jquery.mockjax.js"></script>
+        <script src="./../js/editable/mock-active.js"></script>
+        <script src="./../js/editable/select2.js"></script>
+        <script src="./../js/editable/moment.min.js"></script>
+        <script src="./../js/editable/bootstrap-datetimepicker.js"></script>
+        <script src="./../js/editable/bootstrap-editable.js"></script>
+        <script src="./../js/editable/xediable-active.js"></script>
+        <!-- Chart JS
+                    ============================================ -->
+        <script src="./../js/chart/jquery.peity.min.js"></script>
+        <script src="./../js/peity/peity-active.js"></script>
+        <!-- tab JS
+                    ============================================ -->
+        <script src="./../js/tab.js"></script>
+        <!-- plugins JS
+                    ============================================ -->
+        <script src="./../js/plugins.js"></script>
+        <!-- main JS
+                    ============================================ -->
+        <script src="./../js/main.js"></script>
+
+    </h:body>
+</html>
+

@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <title>Login</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- favicon
+                    ============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+        <!-- Google Fonts
+                    ============================================ -->
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet"/>
+        <!-- Bootstrap CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <!-- Bootstrap CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <!-- owl.carousel CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/owl.carousel.css"/>
+        <link rel="stylesheet" href="css/owl.theme.css"/>
+        <link rel="stylesheet" href="css/owl.transitions.css"/>
+        <!-- animate CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/animate.css"/>
+        <!-- normalize CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <!-- meanmenu icon CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/meanmenu.min.css"/>
+        <!-- main CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/main.css"/>
+        <!-- morrisjs CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/morrisjs/morris.css"/>
+        <!-- mCustomScrollbar CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css"/>
+        <!-- metisMenu CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css"/>
+        <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css"/>
+        <!-- calendar CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/calendar/fullcalendar.min.css"/>
+        <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css"/>
+        <!-- modals CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/modals.css"/>
+        <!-- forms CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/form/all-type-forms.css"/>
+        <!-- style CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="style.css"/>
+        <!-- responsive CSS
+                    ============================================ -->
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <!-- modernizr JS
+                    ============================================ -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </h:head>
+    <h:body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="color-line"></div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
+                <div class="col-md-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="text-center m-b-md custom-login" style="padding-top: 50px;">
+                        <h3>LOGIN</h3>
+                    </div>
+                    <div class="hpanel" style="padding-top: 20px;">
+                        <div class="panel-body">
+                            <p:growl>
+                                <h:form>
+                                    <div class="form-group">
+                                        <label class="control-label" for="username">Username</label>
+                                        <h:inputText value="#{userModel.username}" requiredMessage="Please enter you username" required="true" id="username" class="form-control"/>
+                                    </div>
+                                    <div class="form-group" style="padding-top: 20px;">
+                                        <label class="control-label" for="password">Password</label>
+                                        <h:inputSecret value="#{userModel.password}" requiredMessage="Please enter your password" required="true" id="password" class="form-control"/>
+
+                                    </div>
+                                    <div class="form-group" style="padding-top: 20px;">
+                                        <h:commandButton value="Login" action="#{userModel.login()}" class="btn btn-success btn-block loginbtn" style="padding-top: 5px;"></h:commandButton>
+                                        <!--<a class="btn btn-default btn-block" href="#" style="padding-top: 5px;">Register</a>-->
+                                    </div>
+
+                                </h:form>
+                            </p:growl>
+                            <div class="row">
+                                <div class="col-lg-4"></div>
+                                <div class="col-lg-4">
+                                    <!--<div class="modal-bootstrap mg-tb-30 form-group">-->
+                                    <div class="modal-area-button">
+                                        <a class="Primary mg-b-10" href="#" data-toggle="modal" data-target="#PrimaryModalalert">Register</a>
+                                    </div>
+                                    <!--</div>-->
+                                </div>
+                                <div class="col-lg-4"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                    <div id="PrimaryModalalert" class="modal modal-adminpro-general default-popup-PrimaryModal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-close-area modal-close-df">
+                                    <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
+                                </div>
+                                <div class="modal-body">
+                                    <p:growl>
+                                        <h:form>
+                                            <div class="form-group-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <label class="login2 pull-right pull-right-pro">National ID:</label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                        <p:inputMask mask="9999999999999" value="#{userModel.customer.national_id}" class="form-control" required="true" requiredMessage="Please Fill National Id"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <label class="login2 pull-right pull-right-pro">Full Name:</label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                        <h:inputText value="#{userModel.customer.names}" class="form-control" required="true" requiredMessage="Please Fill Full Names"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <label class="login2 pull-right pull-right-pro">Email:</label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                        <h:inputText value="#{userModel.customer.email}" class="form-control" required="true" requiredMessage="Please Fill Email"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <label class="login2 pull-right pull-right-pro">Phone:</label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                        <p:inputMask mask="+250 999 999 999" value="#{userModel.customer.phone}" class="form-control" required="true" requiredMessage="Please Fill Phone Number"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="form-group-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <label class="login2 pull-right pull-right-pro">Username:</label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                        <h:inputText value="#{userModel.u.username}" class="form-control" required="true" requiredMessage="Please Fill Username"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                        <label class="login2 pull-right pull-right-pro">Password:</label>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                        <h:inputText value="#{userModel.u.password}" class="form-control" required="true" requiredMessage="Please Fill Password"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group-inner">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <h:commandButton class="btn btn-primary btn-sm" action="#{userModel.createCustomer()}" value="Register"></h:commandButton>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </h:form>
+                                    </p:growl>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-md-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <p>Copyright © 2019 by RWIBUTSO Frank.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery
+                    ============================================ -->
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <!-- bootstrap JS
+                    ============================================ -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- wow JS
+                    ============================================ -->
+        <script src="js/wow.min.js"></script>
+        <!-- price-slider JS
+                    ============================================ -->
+        <script src="js/jquery-price-slider.js"></script>
+        <!-- meanmenu JS
+                    ============================================ -->
+        <script src="js/jquery.meanmenu.js"></script>
+        <!-- owl.carousel JS
+                    ============================================ -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- sticky JS
+                    ============================================ -->
+        <script src="js/jquery.sticky.js"></script>
+        <!-- scrollUp JS
+                    ============================================ -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <!-- mCustomScrollbar JS
+                    ============================================ -->
+        <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+        <!-- metisMenu JS
+                    ============================================ -->
+        <script src="js/metisMenu/metisMenu.min.js"></script>
+        <script src="js/metisMenu/metisMenu-active.js"></script>
+        <!-- tab JS
+                    ============================================ -->
+        <script src="js/tab.js"></script>
+        <!-- icheck JS
+                    ============================================ -->
+        <script src="js/icheck/icheck.min.js"></script>
+        <script src="js/icheck/icheck-active.js"></script>
+        <!-- plugins JS
+                    ============================================ -->
+        <script src="js/plugins.js"></script>
+        <!-- main JS
+                    ============================================ -->
+        <script src="js/main.js"></script>
+    </h:body>
+</html>
+
